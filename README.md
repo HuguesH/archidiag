@@ -1,0 +1,2 @@
+# archidiag
+Test architectures diagrams
