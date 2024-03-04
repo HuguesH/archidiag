@@ -1,0 +1,33 @@
+= Racine des pages de documentation
+
+=== Logos
+
+Téléchargement des logos vectoriels depuis les site :
+
+- https://techicons.dev/icons/debian
+- https://www.svgrepo.com/
+
+Create and adapt with https://inkscape.org/
+
+
+=== Outils
+
+
+*  D2
+*  PlantUML
+*  DrawIO
+
+
+== DrawIO
+
+Free and Open source graphic interface, many compatibilities, confluence, IDE, ...
+Prefer install desktop version : https://github.com/jgraph/drawio-desktop/releases
+
+== PlantUML
+
+Best
+
+== D2
+
+use plugin in VSCode and InteliJ Commnunity
+Installation : https://github.com/terrastruct/d2/blob/master/docs/INSTALL.md
