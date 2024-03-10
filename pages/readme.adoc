@@ -10,6 +10,7 @@ Téléchargement des logos vectoriels depuis les site :
 Create and adapt with https://inkscape.org/
 
 
+
 === Outils
 
 
@@ -25,7 +26,12 @@ Prefer install desktop version : https://github.com/jgraph/drawio-desktop/releas
 
 == PlantUML
 
-Best
+Best tools today for UML and C4 diagrams
+Use logo and make sprite for personalise graphics : https://plantuml.com/fr-dark/sprite
+A good link of plantuml documentation for svg optimisation : https://vecta.io/nano
+Si l'image vectorielle pose problème à plantUML c'est peut être que des balises SVG ne sont pas supportées.
+Forcer une conversion depuis un format png vers une image vectorielle, en ligne ou via Inkscape permettra sans doute de contourner le prblème.
+Exemple de site de conversion en ligne : https://png2svg.com/fr/
 
 == D2
 
