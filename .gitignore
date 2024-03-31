@@ -1,3 +1,4 @@
 .idea
 **/*.dtmp
 **/*.drawio.bkp
+github-ssh-key*
