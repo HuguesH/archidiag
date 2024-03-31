@@ -14,7 +14,6 @@ Create and adapt with https://inkscape.org/
 === Outils
 
 
-*  D2
 *  PlantUML
 *  DrawIO
 
@@ -32,8 +31,3 @@ A good link of plantuml documentation for svg optimisation : https://vecta.io/na
 Si l'image vectorielle pose problème à plantUML c'est peut être que des balises SVG ne sont pas supportées.
 Forcer une conversion depuis un format png vers une image vectorielle, en ligne ou via Inkscape permettra sans doute de contourner le prblème.
 Exemple de site de conversion en ligne : https://png2svg.com/fr/
-
-== D2
-
-use plugin in VSCode and InteliJ Commnunity
-Installation : https://github.com/terrastruct/d2/blob/master/docs/INSTALL.md

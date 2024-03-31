@@ -1,4 +1,4 @@
-@startuml
+@startuml sequence-idp
 actor       user
 participant browser
 participant serverAPP

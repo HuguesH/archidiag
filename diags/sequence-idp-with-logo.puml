@@ -1,12 +1,14 @@
-@startuml
-!include my-sprite.puml
+@startuml sequence-idp-with-logo
+!include my-sprites.puml
+!include skinparams.puml
 
-actor       user
-participant "<$g-chrome>" as browser
-participant serverAPP
-participant "<$idp-keycloak>" as serverIDP
+participant "<$user>\n User" as user
+participant "<$g-chrome>\n Browser" as browser
+participant "<$web-service>\n Web Service" as serverAPP
+participant "<$idp-keycloak>\n IDP KC" as serverIDP
 
 autonumber
+
 
 activate user
 user -> browser: accesURL

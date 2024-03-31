@@ -1,0 +1,4 @@
+@startuml
+!include my-sprites.puml
+listsprites
+@enduml
