@@ -1,4 +1,4 @@
 @startuml
-!include my-sprites.puml
+!include my-sprite.puml
 listsprites
 @enduml
