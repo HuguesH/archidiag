@@ -1,5 +1,6 @@
 @startuml sequence-idp-with-logo
-!include my-sprites.puml
+!include drawio-selected-sprite.puml!0
+!include softwares-sprites.puml!0
 !include skinparams.puml
 
 participant "<$user>\n User" as user
