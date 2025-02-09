@@ -1,0 +1,25 @@
+@startuml
+
+' !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+' uncomment the following line and comment the first to use locally
+!include ./C4-PlantUML-Fork-stdlib/C4_Context.puml
+
+LAYOUT_WITH_LEGEND()
+
+title C4 Context System Messages
+
+Person(user,"User","Read and Write Messages")
+Person(moderator,"Moderator", "Content moderator")
+Person(admin,"Administrator ", "Administrate IDP and Services")
+
+System(system, "System Provider", "System Provider")
+System_Ext(webse, "Web search engine", "Web Search Engine")
+System_Ext(store, "Device store", "Device store, Google & Apple")
+
+user --> system : https
+user -> webse : https
+user -> store : native
+moderator -u-> system : https
+admin -u-> system : https
+
+@enduml

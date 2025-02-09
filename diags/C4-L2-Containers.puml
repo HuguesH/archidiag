@@ -1,0 +1,35 @@
+@startuml
+
+' !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+' uncomment the following line and comment the first to use locally
+!include ./C4-PlantUML-Fork-stdlib/C4_Container.puml
+!include drawio-selected-sprite.puml!0
+!include softwares-sprites.puml!0
+
+LAYOUT_WITH_LEGEND()
+
+title  C4 Container
+
+Person(user,"User","Read and Write Messages")
+Person(moderator,"Moderator", "Content moderator")
+Person(admin,"Administrator ", "Administrate IDP and Services")
+
+System(system, "System Provider", ""){
+    Container(kc,"Keycloak", "Identity, web admin", $sprite="idp-keycloak")
+    Container(front,"Site web", "Web, Javascript, HTML", $sprite="application-web")
+    Container(app,"Application native", "Kotlin, Swift", $sprite="application-web")
+    Container(ws,"Web Services", "API Rest - Python",$sprite="web-service")
+    Container(db,"Database", "Relational dada store",$sprite="database")
+}
+
+front --> ws
+app --> ws
+ws --> db
+
+user --> app
+user --> kc
+moderator --> front
+moderator --> kc
+admin --> system
+
+@enduml
