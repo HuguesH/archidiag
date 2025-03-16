@@ -1,7 +1,11 @@
 @startuml sequence-idp-with-logo
-!include drawio-selected-sprite.puml!0
-!include softwares-sprites.puml!0
-!include skinparams.puml
+
+!$path = "https://raw.githubusercontent.com/HuguesH/archidiag/refs/heads/main/diags"
+'!$path = "./"
+
+!include $path/drawio-selected-sprite.puml!0
+!include $path/softwares-sprites.puml!0
+!include $path/skinparams.puml!0
 
 participant "<$user>\n User" as user
 participant "<$g-chrome>\n Browser" as browser
